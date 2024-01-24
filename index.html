@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Vishwakarma</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-r"></i>
+                    <div class="logo-text">Rohit Vishwakarma</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times"></i>
+
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="https://github.com/Rkarama26">Portfolio</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="https://drive.google.com/file/d/1TvIYDcEjedyf5jR-9c2cvgCf2PNGDwFr/view?usp=sharing">Resume</a></li>
+                        <li><a href="contact_form.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="main_photo1.png" alt="Profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Java Developer</span></h5>
+                    <h1>Rohit Vishwakarma</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Illum laborum nisi deleniti harum nulla ducimus laboriosam 
+                         dolore fugiat deserunt doloribus.
+                        </p>
+                        <div class="btn-group">
+                            <a href="https://drive.google.com/file/d/1TvIYDcEjedyf5jR-9c2cvgCf2PNGDwFr/view?usp=sharing" class="btn active">Download CV</a>
+                            <a href="contact_form.html" class="btn">Contact</a>
+                        </div>
+
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/rohit-karma026/"><li class="fa-brands fa-linkedin"></li></a>
+                            <a href="https://github.com/Rkarama26"><li class="fa-brands fa-github"></li></a>
+                            <a href="https://www.instagram.com/rohit_karma_?igsh=OXM3cWlkdWYyN3ll"><li class="fa-brands fa-instagram"></li></a>
+                            <a href="https://wa.me/9407274612"><li class="fa-brands fa-whatsapp"></li></a>
+
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <footer>
+        <div class="wrapper">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>&copy; 2024 Rohit Vishwakarma. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js
+    "></script>
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        
+        togglebtn.innerHTML = '<i class="fas fa-bars"></i>'; // Set initial content
+        
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        
+            // Change the icon based on the menu state
+            var isOpen = nav.classList.contains("open");
+            if (isOpen) {
+                togglebtn.innerHTML = '<i class="fas fa-times"></i>'; // Change to close icon
+            } else {
+                togglebtn.innerHTML = '<i class="fas fa-bars"></i>'; // Change to original icon
+            }
+        });
+        
+        // Close the menu when a navlink is clicked
+        nav.querySelectorAll("li a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                togglebtn.classList.remove("click");
+                nav.classList.remove("open");
+                togglebtn.innerHTML = '<i class="fas fa-bars"></i>'; // Change to original icon
+            });
+        });
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            var typed = new Typed(".input", {
+                strings: ["Web Developer", "Frontend Developer", "Java Developer"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                backDelay: 1000,
+                loop: true,
+            });
+        });
+        
+        
+        
+    </script>
+</body>
+</html>

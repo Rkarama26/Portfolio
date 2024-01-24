@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rancho&family=Water+Brush&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.skills-section {
+    background-color: #222;
+    width: 100%;
+    height: 100vh;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skills-head {
+    width: 100%;
+    margin-bottom: 50px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.skills-head h2 {
+    font-size: 2em;
+    margin-bottom: -5px;
+}
+
+.skills-head h2 span {
+    color: #007ced;
+}
+
+.skills-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+    margin-bottom: 60px;
+}
+
+.skill-item .skill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill-item .skill-info p:nth-child(2) {
+    font-weight: 500;
+}
+
+.skill-item .skill-bar {
+    width: 100%;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.144);
+    border-radius: 25px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.skill-item .skill-bar span {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #007ced;
+    border-radius: 25px;
+    animation-duration: 1s; /* Adjust as needed */
+}
+
+@media only screen and (min-width: 768px) {
+    .skills-section {
+        padding: 0 13%;
+    }
+
+    .skills-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skill-item .skill-bar {
+        margin-top: 5px;
+    }
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+.skill-item .skill-bar .css-bar {
+    width: 50%;
+    animation: css 2s;
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+.skill-item .skill-bar .java-bar {
+    width: 75%;
+    animation: java 2s;
+}
+
+@keyframes java {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+.skill-item .skill-bar .js-bar {
+    width: 50%;
+    animation: js 2s;
+}
+
+@keyframes js {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+.skill-item .skill-bar .cpp-bar {
+    width: 70%;
+    animation: cpp 2s;
+}
+
+@keyframes cpp {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+.skill-item .skill-bar .aws-bar {
+    width: 40%;
+    animation: aws 2s;
+}
+
+@keyframes aws {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+.skill-item .skill-bar .ps-bar {
+    width: 60%;
+    animation: ps 2s;
+}
+
+@keyframes ps {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+.skill-item .skill-bar .iot-bar {
+    width: 60%;
+    animation: iot 2s;
+}
+
+@keyframes iot {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+body {
+    overflow: hidden;
+}
+
+.skills-section {
+    position: fixed;
+}
