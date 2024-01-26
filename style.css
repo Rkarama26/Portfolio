@@ -329,7 +329,7 @@ footer {
     }
 
     nav .navlinks {
-        position: fixed;
+        position: absolute;
         top: 0px; /* Adjust position from top */
         right: -100%;
         bottom: 0;
