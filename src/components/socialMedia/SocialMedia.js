@@ -1,6 +1,6 @@
 import React from "react";
 import "./SocialMedia.scss";
-import {socialMediaLinks} from "../../portfolio";
+import { socialMediaLinks } from "../../portfolio";
 
 export default function socialMedia() {
   if (!socialMediaLinks.display) {
@@ -63,7 +63,7 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-facebook-f"></i>
+          <i className="fab fa-x-facebook"></i>
           <span></span>
         </a>
       ) : null}
@@ -80,17 +80,18 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-      {socialMediaLinks.twitter ? (
+      {socialMediaLinks.x ? (
         <a
-          href={socialMediaLinks.twitter}
-          className="icon-button twitter"
+          href={socialMediaLinks.x}
+          className="icon-button x"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-twitter"></i>
+          <i className="fab fa-x-twitter"></i>
           <span></span>
         </a>
       ) : null}
+
 
       {socialMediaLinks.medium ? (
         <a

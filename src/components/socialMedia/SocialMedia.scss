@@ -48,8 +48,9 @@
   background-color: $google;
 }
 
-.twitter i {
+.x i {
   background-color: $twitter;
+  display: none;
 }
 
 .medium i {
@@ -69,7 +70,7 @@
 }
 
 /* Hover Transition */
-.twitter i:hover,
+.x i:hover,
 .google i:hover,
 .gitlab i:hover,
 .github i:hover,
