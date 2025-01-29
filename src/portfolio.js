@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Software Engineer 🚀 with a focus on Java, Spring Boot, and React. Experienced in building scalable, full-stack applications, including backend APIs and frontend UI. Eager to apply my skills and grow as a developer in the tech industry. Welcome to my portfolio!"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1h_BUqm8CIaIIGWnlpVbfcgL7zS17sl0W/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1QNPI3HIkUk3ILvEWkSyRIndTcLX_6cVU/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
