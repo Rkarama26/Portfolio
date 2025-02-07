@@ -4,7 +4,6 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
-document.title = "Rohit vishwakarma";
 
 
 ReactDOM.render(<App />, document.getElementById("root"));
