@@ -1,6 +1,6 @@
 import React from "react";
 import "./SocialMedia.scss";
-import { socialMediaLinks } from "../../portfolio";
+import {socialMediaLinks} from "../../portfolio";
 
 export default function socialMedia() {
   if (!socialMediaLinks.display) {
@@ -91,7 +91,6 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
-
 
       {socialMediaLinks.medium ? (
         <a

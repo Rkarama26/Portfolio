@@ -121,8 +121,7 @@ const educationInfo = {
       logo: require("./assets/images/RGPV-Logo.webp"),
       subHeader: "Bachelor of Technology",
       duration: "September 2021 - April 2025",
-      desc: "Electronics & Communication.",
-
+      desc: "Electronics & Communication."
     }
   ]
 };
@@ -250,11 +249,15 @@ const achievementSection = {
 
     {
       title: "Cloud Computing with AWS",
-      subtitle: "Completed Certifcation from E-cell, IIT Kharagpur for Amazon Web Services.",
+      subtitle:
+        "Completed Certifcation from E-cell, IIT Kharagpur for Amazon Web Services.",
       image: require("./assets/images/IIT.jpeg"),
       imageAlt: "PWA Logo",
       footerLink: [
-        { name: "Certification", url: "https://drive.google.com/file/d/1goyKWNexMBgqRpiOOpKQtcDhLhIFLX4x/view" },
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1goyKWNexMBgqRpiOOpKQtcDhLhIFLX4x/view"
+        }
         // {
         //   name: "Final Project",
         //   url: "https://pakistan-olx-1.firebaseapp.com/"
@@ -271,7 +274,7 @@ const blogSection = {
   title: "Blogs",
   subtitle:
     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", 
+  displayMediumBlogs: "true",
   blogs: [
     {
       url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
@@ -332,7 +335,8 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
+  subtitle:
+    "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+91-9407274612",
   email_address: "rohit.karma026@gmail.com"
 };

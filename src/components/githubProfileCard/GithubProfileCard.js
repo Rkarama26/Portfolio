@@ -1,11 +1,11 @@
 import React from "react";
 import "./GithubProfileCard.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import { contactInfo, isHireable } from "../../portfolio";
+import {contactInfo, isHireable} from "../../portfolio";
 import emoji from "react-easy-emoji";
-import { Fade } from "react-reveal";
+import {Fade} from "react-reveal";
 
-export default function GithubProfileCard({ prof }) {
+export default function GithubProfileCard({prof}) {
   if (isHireable) {
     prof.hireable = "Yes";
   } else {
@@ -20,7 +20,7 @@ export default function GithubProfileCard({ prof }) {
             <div className="blog-header">
               <p className="subTitle blog-subtitle">{contactInfo.subtitle}</p>
               <br />
-              
+
               <a
                 className="contact-detail-email"
                 href={"mailto:" + contactInfo.email_address}
@@ -29,13 +29,9 @@ export default function GithubProfileCard({ prof }) {
               </a>
               <br />
               <br />
-              <a
-                className="contact-detail"
-                href={"tel:" + contactInfo.number}
-              >
+              <a className="contact-detail" href={"tel:" + contactInfo.number}>
                 {contactInfo.number}
               </a>
-
             </div>
             <h2 className="bio-text">"{emoji(String(prof.bio))}"</h2>
             {prof.location !== null && (
