@@ -49,7 +49,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY SOFTWARE DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "CRAZY SOFTWARE DEVELOPER WHO WANTS TO EXPLORE",
   skills: [
     emoji(
       "⚡ Develop scalable and efficient full-stack applications using Java, Spring Boot, and React."
@@ -76,15 +76,6 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "spring boot",
       fontAwesomeClassname: "fas fa-power-off"
     },
-
-    {
-      skillName: "spring cloud",
-      fontAwesomeClassname: "fas fa-cloud"
-    },
-    {
-      skillName: "maven",
-      fontAwesomeClassname: "fas fa-wrench"
-    },
     {
       skillName: "html-5",
       fontAwesomeClassname: "fab fa-html5"
@@ -98,6 +89,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
+
     {
       skillName: "reactjs",
       fontAwesomeClassname: "fab fa-react"
@@ -110,11 +102,6 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
-    },
-
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
     },
     {
       skillName: "docker",
@@ -143,19 +130,19 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true,
   experience: [
     {
       Stack: "Java",
       progressPercentage: "100%"
     },
     {
-      Stack: "Spring", //Insert stack or technology you have experience in
-      progressPercentage: "100%" //Insert relative proficiency in percentage
+      Stack: "JavaScript",
+      progressPercentage: "100%"
     },
 
     {
-      Stack: "MySQL",
+      Stack: "React",
       progressPercentage: "100%"
     }
   ],
@@ -172,7 +159,7 @@ const workExperiences = {
       company: "Innobimb Infotech",
       companylogo: require("./assets/images/innobimbinfotech_logo.jpeg"),
       //src\assets\images\innobimbinfotech_logo.jpeg
-      date: "June 2024 – December 2024",
+      date: "September 2024 – December 2024",
       desc: "Building Secure and Efficient APIs: Software Engineering Internship at Innobimb Infotech",
       descBullets: [
         " Developed secure RESTful APIs using Java 17 and Spring Boot, implementing OAuth2 for user authentication.",
@@ -267,7 +254,7 @@ const achievementSection = {
       image: require("./assets/images/IIT.jpeg"),
       imageAlt: "PWA Logo",
       footerLink: [
-        // { name: "Certification", url: "" },
+        { name: "Certification", url: "https://drive.google.com/file/d/1goyKWNexMBgqRpiOOpKQtcDhLhIFLX4x/view" },
         // {
         //   name: "Final Project",
         //   url: "https://pakistan-olx-1.firebaseapp.com/"
@@ -284,7 +271,7 @@ const blogSection = {
   title: "Blogs",
   subtitle:
     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+  displayMediumBlogs: "true", 
   blogs: [
     {
       url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
