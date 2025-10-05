@@ -2,8 +2,8 @@
 
 To view live, **[click here](https://www.my-folio.site/)**.
 
-
 ## Portfolio Sections
+
 ✔️ Summary and About me\
 ✔️ Skills\
 ✔️ Education\
@@ -17,4 +17,3 @@ To view live, **[click here](https://www.my-folio.site/)**.
 ✔️ Contact me\
 ✔️ Twitter Timeline\
 ✔️ GitHub Profile
-

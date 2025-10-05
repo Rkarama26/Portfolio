@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
@@ -14,7 +14,7 @@ import {
 } from "../../portfolio";
 
 function Header() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
@@ -24,27 +24,25 @@ function Header() {
   const viewResume = resumeSection.display;
 
   return (
+    <header
+      style={{
+        position: "sticky",
+        top: 0,
+        left: 0,
+        boxShadow:
+          "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
 
-    <header style={{
-      position: "sticky",
-      top: 0,
-      left: 0,
-      boxShadow: "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
-
-      zIndex: 1000,        // stay above all content
-    }}
-      className={isDark ? "dark-menu header" : "header"}>
+        zIndex: 1000 // stay above all content
+      }}
+      className={isDark ? "dark-menu header" : "header"}
+    >
       <a href="/" className="logo">
         <span className="grey-color"> &lt;</span>
         <span className="logo-name">{greeting.username}</span>
         <span className="grey-color">/&gt;</span>
       </a>
       <input className="menu-btn" type="checkbox" id="menu-btn" />
-      <label
-        className="menu-icon"
-        htmlFor="menu-btn"
-        style={{ color: "white" }}
-      >
+      <label className="menu-icon" htmlFor="menu-btn" style={{color: "white"}}>
         <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
       </label>
       <ul className={isDark ? "dark-menu menu" : "menu"}>

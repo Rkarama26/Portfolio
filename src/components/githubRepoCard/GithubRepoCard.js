@@ -1,11 +1,20 @@
 import React from "react";
 import "./GithubRepoCard.scss";
-import { Fade } from "react-reveal";
-import { formatFileSizeDisplay } from "../../utils";
+import {Fade} from "react-reveal";
+import {formatFileSizeDisplay} from "../../utils";
 
-export default function GithubRepoCard({ repo, isDark }) {
+export default function GithubRepoCard({repo, isDark}) {
   if (!repo?.node) return null;
-  const { name, description, url, homepageUrl, forkCount, stargazers, primaryLanguage, diskUsage } = repo.node;
+  const {
+    name,
+    description,
+    url,
+    homepageUrl,
+    forkCount,
+    stargazers,
+    primaryLanguage,
+    diskUsage
+  } = repo.node;
 
   return (
     <Fade bottom duration={1000} distance="20px">
@@ -32,7 +41,9 @@ export default function GithubRepoCard({ repo, isDark }) {
         </div>
 
         {/* Description */}
-        <p className="repo-description">{description || "No description provided."}</p>
+        <p className="repo-description">
+          {description || "No description provided."}
+        </p>
 
         {/* Stats */}
         <div className="repo-stats">
@@ -41,7 +52,7 @@ export default function GithubRepoCard({ repo, isDark }) {
               <span>
                 <div
                   className="language-color"
-                  style={{ backgroundColor: primaryLanguage.color }}
+                  style={{backgroundColor: primaryLanguage.color}}
                 ></div>
                 <p>{primaryLanguage.name}</p>
               </span>

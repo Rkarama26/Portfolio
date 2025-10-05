@@ -40,7 +40,6 @@ export default function Greeting() {
               <SocialMedia />
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
-                
               </div>
             </div>
           </div>
