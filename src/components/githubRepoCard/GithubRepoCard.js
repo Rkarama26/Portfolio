@@ -75,7 +75,7 @@ export default function GithubRepoCard({repo, isDark}) {
             href={url}
             target="_blank"
             rel="noopener noreferrer"
-            className="repo-link-btn"
+            className="  px-3 py-1 bg-blue-600 text-white rounded-lg hover:bg-blue-500"
           >
             View on GitHub
           </a>
@@ -84,7 +84,7 @@ export default function GithubRepoCard({repo, isDark}) {
               href={homepageUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-3 py-1 bg-blue-600 text-white rounded-lg hover:bg-blue-500"
+              className="repo-link-btn"
             >
               Live Site
             </a>
