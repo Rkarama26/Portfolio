@@ -42,6 +42,7 @@ if (USE_GITHUB_DATA === "true") {
                 totalCount
               }
               url
+              homepageUrl   
               id
               diskUsage
               primaryLanguage {
